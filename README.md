@@ -27,7 +27,7 @@ Management suspects that some employees may be using TOR browsers to bypass netw
 
 ### 1. Searched the `DeviceFileEvents` Table
 
-Searched for any file that had the string "tor" in it and discovered what looks like the user "employee" downloaded a TOR installer, did something that resulted in many TOR-related files being copied to the desktop, and the creation of a file called `tor-shopping-list.txt` on the desktop at `2025-03-30T18:06:31.3295056Z`. These events began at `2025-03-30T18:06:31.3295056Z`.
+Searched for any file that had the string "tor" in it and discovered what looks like the user "userveto" downloaded a TOR installer, did something that resulted in many TOR-related files being copied to the desktop, and the creation of a file called `tor-shopping-list.txt` on the desktop at `2025-03-30T18:06:31.3295056Z`. These events began at `2025-03-30T18:06:31.3295056Z`.
 
 **Query used to locate events:**
 
@@ -115,14 +115,14 @@ DeviceNetworkEvents
 
 ### 3. Process Execution - TOR Browser Launch
 
-- **Timestamp:** `2024-11-08T22:17:21.6357935Z`
+- **Timestamp:** `2025-03-30T19:10:03.9027825Z`
 - **Event:** User "employee" opened the TOR browser. Subsequent processes associated with TOR browser, such as `firefox.exe` and `tor.exe`, were also created, indicating that the browser launched successfully.
 - **Action:** Process creation of TOR browser-related executables detected.
 - **File Path:** `C:\Users\employee\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`
 
 ### 4. Network Connection - TOR Network
 
-- **Timestamp:** `2025-03-30T19:12:25.7993969Z`
+- **Timestamp:** `2025-03-30T19:09:27.4298878Z`
 - **Event:** A network connection to IP `176.198.159.33` on port `9001` by user "employee" was established using `tor.exe`, confirming TOR browser network activity.
 - **Action:** Connection success.
 - **Process:** `tor.exe`
